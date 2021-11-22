@@ -2,16 +2,39 @@ package ru.job4j.loop;
 
 public class Cryptography {
     public static String code(String s) {
-        StringBuilder sb = new StringBuilder(s);
-        if (s == "") {
-            s = "empty";
+        if (s.length() == 0) {
+         s = "empty";
         } else if (s.length() > 4) {
+            StringBuilder cardCode = new StringBuilder(s);
+            cardCode.replace(0, 12, "############");
+            s = cardCode.toString();
+      }
 
-            sb.setCharAt(sb.length() - 1, '*');
-            sb.setCharAt(sb.length() - 2, '*');
-            sb.setCharAt(sb.length() - 3, '*');
-
-        }
         return s;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
