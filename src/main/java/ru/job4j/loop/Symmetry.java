@@ -10,9 +10,6 @@ public class Symmetry {
             rsl = str.charAt(j) == str.charAt(dln - v);
             v++;
         }
-
         return rsl;
     }
-
-
 }
