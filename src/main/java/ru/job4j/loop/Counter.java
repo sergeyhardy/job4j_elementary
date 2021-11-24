@@ -15,7 +15,6 @@ public class Counter {
             if (index % 2 == 0) {
                 sum = sum + index;
             }
-
         }
         return sum;
     }

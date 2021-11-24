@@ -7,7 +7,6 @@ public class Hamming {
             if (left.charAt(index - 1) != right.charAt(index - 1)) {
                 rsl++;
             }
-
         }
         return rsl;
     }

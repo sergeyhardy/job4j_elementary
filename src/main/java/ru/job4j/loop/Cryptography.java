@@ -9,7 +9,6 @@ public class Cryptography {
             cardCode.replace(0, 12, "############");
             s = cardCode.toString();
       }
-
         return s;
     }
 }
